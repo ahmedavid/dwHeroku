@@ -33748,6 +33748,11 @@ audio-track audio-track-progress-bar time {
   margin: 0 auto;
 }
 
+.playButton {
+  border: 1px solid menu;
+  border-radius: 100%;
+}
+
 /*
   World Flags
   ---------------------
@@ -38753,6 +38758,10 @@ audio-track audio-track-progress-bar time {
   background-position: 0px -15756px;
 }
 
+page-home .header {
+  color: #fff;
+}
+
 page-home .titleImg {
   -webkit-transform: scale(1.5, 1.5);
   transform: scale(1.5, 1.5);
@@ -38761,4 +38770,61 @@ page-home .titleImg {
 
 page-home .imgHolder {
   overflow: hidden;
+}
+
+page-home .card-background-page ion-card.series-card {
+  position: relative;
+  text-align: right;
+}
+
+page-home .card-background-page .card-title {
+  font-size: 1.3em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 35px;
+  padding-top: 10px;
+}
+
+page-home .card-background-page .card-subtitle {
+  font-size: .8em;
+  width: 100%;
+  color: #fff;
+  padding-right: 40px;
+}
+
+page-home .bg {
+  position: absolute;
+  bottom: -10px;
+  background-color: #012D5A;
+  height: 70px;
+  width: 100%;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: translate(0, 35px) rotate(-5deg) scale(1.1);
+  transform: translate(0, 35px) rotate(-5deg) scale(1.1);
+}
+
+page-home .card {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+page-home .col {
+  padding: 1px;
+}
+
+page-home .main-bg {
+  background-color: #466687;
+}
+
+page-lesson-list ion-thumbnail {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+page-lesson-list .big-icon {
+  font-size: 36px;
+  color: #012D5A;
 }
