@@ -1,16 +1,16 @@
 webpackJsonp([3],{
 
-/***/ 112:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -140,17 +140,17 @@ DataService = __decorate([
 
 /***/ }),
 
-/***/ 113:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_data_service_data_service__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lesson_list_lesson_list__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_data_service_data_service__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lesson_list_lesson_list__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -214,7 +214,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\David\WebstormProjects\dwApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="menu">\n\n    <ion-buttons start>\n      <button menuToggle ion-button icon-only>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n\n\n    <ion-title>\n      DW Warum Nicht!\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page">\n\n  <ion-card class="main-bg">\n\n    <ion-card-header class="header">\n      {{module?.title}}\n    </ion-card-header>\n\n    <ion-card-content class="header" style="text-align: justify">\n      {{module?.description}}\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card class="series-card" *ngFor="let serie of module?.series;let i=index" (click)="openLessonList(serie.chapters,serie.title)">\n    <img [src]="\'assets/series/\'+(i+1)+\'.jpg\'"/>\n    <div class="bg">\n      <div class="card-title">{{serie.title}}</div>\n      <div class="card-subtitle">{{serie.chapters.length}} Chapters</div>\n    </div>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\David\WebstormProjects\dwApp\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/davidahmadov/Projects/dwApp/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar color="menu">\n\n    <ion-buttons start>\n      <button menuToggle ion-button icon-only>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n\n\n    <ion-title>\n      DW Warum Nicht!\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page">\n\n  <ion-card class="main-bg">\n\n    <ion-card-header class="header">\n      {{module?.title}}\n    </ion-card-header>\n\n    <ion-card-content class="header" style="text-align: justify">\n      {{module?.description}}\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card class="series-card" *ngFor="let serie of module?.series;let i=index" (click)="openLessonList(serie.chapters,serie.title)">\n    <img [src]="\'assets/series/\'+(i+1)+\'.jpg\'"/>\n    <div class="bg">\n      <div class="card-title">{{serie.title}}</div>\n      <div class="card-subtitle">{{serie.chapters.length}} Chapters</div>\n    </div>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/davidahmadov/Projects/dwApp/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_3__providers_data_service_data_service__["a" /* DataService */],
@@ -227,7 +227,7 @@ HomePage = __decorate([
 
 /***/ }),
 
-/***/ 121:
+/***/ 125:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -236,16 +236,16 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 121;
+webpackEmptyAsyncContext.id = 125;
 
 /***/ }),
 
-/***/ 163:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/about/about.module": [
-		329,
+		327,
 		2
 	],
 	"../pages/intro/intro.module": [
@@ -253,7 +253,7 @@ var map = {
 		1
 	],
 	"../pages/settings/settings.module": [
-		330,
+		329,
 		0
 	]
 };
@@ -269,19 +269,22 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
 module.exports = webpackAsyncContext;
-webpackAsyncContext.id = 163;
+webpackAsyncContext.id = 167;
 
 /***/ }),
 
-/***/ 166:
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LessonListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_audio__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pdf_pdf__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_audio__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_transfer__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_document_viewer__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -295,8 +298,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var LessonListPage = (function () {
-    function LessonListPage(navParams, _audioProvider, modalCtrl) {
+    function LessonListPage(document, iab, transfer, file, navParams, _audioProvider, modalCtrl) {
+        this.document = document;
+        this.iab = iab;
+        this.transfer = transfer;
+        this.file = file;
         this.navParams = navParams;
         this._audioProvider = _audioProvider;
         this.modalCtrl = modalCtrl;
@@ -312,8 +322,23 @@ var LessonListPage = (function () {
         });
     };
     LessonListPage.prototype.openDoc = function (index) {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__pdf_pdf__["a" /* PdfPage */], { src: this.chapters[index].media.pdf, title: this.chapters[index].title });
-        modal.present();
+        //const modal=this.modalCtrl.create(PdfPage,{src:this.chapters[index].media.pdf,title:this.chapters[index].title});
+        //modal.present()
+        this.download(index);
+    };
+    LessonListPage.prototype.download = function (index) {
+        var _this = this;
+        var fileTransfer = this.transfer.create();
+        fileTransfer.download(this.chapters[index].media.pdf, this.file.externalDataDirectory + this.chapters[index].title + ".pdf").then(function (entry) {
+            console.log('download complete: ' + entry.toURL());
+            var options = {
+                title: _this.chapters[index].title,
+                openWith: { enabled: true }
+            };
+            _this.document.viewDocument(entry.toURL(), 'application/pdf', options);
+        }, function (error) {
+            console.log("ERROR:", error);
+        });
     };
     LessonListPage.prototype.play = function () {
         this._audioProvider.tracks.forEach(function (track) { return track.pause(); });
@@ -324,9 +349,12 @@ var LessonListPage = (function () {
 }());
 LessonListPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'page-lesson-list',template:/*ion-inline-start:"C:\Users\David\WebstormProjects\dwApp\src\pages\lesson-list\lesson-list.html"*/'<ion-header>\n\n  <ion-navbar color="menu">\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n\n  <ion-list>\n    <audio-track #audio *ngFor="let track of tracks;let i=index"  [track]="track" (onFinish)="onTrackFinished($event)">\n      <ion-item>\n        <ion-thumbnail item-left (click)="play()">\n          <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>\n        </ion-thumbnail>\n        <div item-content style="width:100%">\n          <p><strong>{{audio.title}}</strong></p>\n          <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.isPlaying ? \'visible\' : \'hidden\'}"></audio-track-progress-bar>\n        </div>\n        <div item-right>\n          <button ion-button clear icon-only (click)="openDoc(i)"><ion-icon name="document" class="big-icon"></ion-icon></button>\n        </div>\n      </ion-item>\n    </audio-track>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\David\WebstormProjects\dwApp\src\pages\lesson-list\lesson-list.html"*/,
+        selector: 'page-lesson-list',template:/*ion-inline-start:"/Users/davidahmadov/Projects/dwApp/src/pages/lesson-list/lesson-list.html"*/'<ion-header>\n\n  <ion-navbar color="menu">\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n\n  <ion-list>\n    <audio-track #audio *ngFor="let track of tracks;let i=index"  [track]="track" (onFinish)="onTrackFinished($event)">\n      <ion-item>\n        <ion-thumbnail item-left (click)="play()">\n          <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>\n        </ion-thumbnail>\n        <div item-content style="width:100%">\n          <p><strong>{{audio.title}}</strong></p>\n          <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.isPlaying ? \'visible\' : \'hidden\'}"></audio-track-progress-bar>\n        </div>\n        <div item-right>\n          <button ion-button clear icon-only (click)="openDoc(i)"><ion-icon name="document" class="big-icon"></ion-icon></button>\n        </div>\n      </ion-item>\n    </audio-track>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/davidahmadov/Projects/dwApp/src/pages/lesson-list/lesson-list.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__ionic_native_document_viewer__["a" /* DocumentViewer */],
+        __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+        __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_transfer__["a" /* FileTransfer */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__["a" /* File */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_2_ionic_audio__["a" /* AudioProvider */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
 ], LessonListPage);
@@ -335,109 +363,13 @@ LessonListPage = __decorate([
 
 /***/ }),
 
-/***/ 173:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PdfPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_document_viewer__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(178);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var PdfPage = (function () {
-    function PdfPage(iab, transfer, file, document, navParams, viewCtrl, platform) {
-        this.iab = iab;
-        this.transfer = transfer;
-        this.file = file;
-        this.document = document;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this.platform = platform;
-        this.zoom = 1;
-        this.isDevice = false;
-        this.isDevice = this.platform.is("cordova");
-    }
-    PdfPage.prototype.ionViewDidLoad = function () {
-        this.src = this.navParams.get('src');
-        this.title = this.navParams.get('title');
-    };
-    PdfPage.prototype.openPDF = function () {
-        var browser = this.iab.create('http://www.dw.com/downloads/25629156/eng1-01.pdf');
-        browser.show();
-        var options = {
-            title: 'My PDF'
-        };
-        //this.document.viewDocument('assets/myFile.pdf', 'application/pdf', options)
-    };
-    PdfPage.prototype.download = function () {
-        var _this = this;
-        var url = 'http://www.dw.com/downloads/25629156/eng1-01.pdf';
-        var fileTransfer = this.transfer.create();
-        fileTransfer.download(url, this.file.dataDirectory + 'test.pdf').then(function (entry) {
-            var options = {
-                title: 'My PDF'
-            };
-            _this.document.viewDocument(entry.toURL(), 'application/pdf', options);
-            console.log('download complete: ' + entry.toURL());
-        }, function (error) {
-            console.log("PDF ERROR:", error);
-        });
-    };
-    PdfPage.prototype.onDissmis = function () {
-        this.viewCtrl.dismiss();
-    };
-    PdfPage.prototype.zoomOut = function () {
-        if (this.zoom < 2) {
-            this.zoom += 0.2;
-        }
-    };
-    PdfPage.prototype.zoomIn = function () {
-        if (this.zoom > 0.5) {
-            this.zoom -= 0.2;
-        }
-    };
-    return PdfPage;
-}());
-PdfPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'page-pdf',template:/*ion-inline-start:"C:\Users\David\WebstormProjects\dwApp\src\pages\pdf\pdf.html"*/'<ion-header>\n\n  <ion-navbar color="menu">\n    <ion-buttons start>\n      <button ion-button icon-only (click)="onDissmis()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Exercises</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n\n\n  <ion-fab bottom right>\n    <button ion-fab (click)="zoomIn()"><ion-icon name="add"></ion-icon></button>\n    <button ion-fab (click)="zoomOut()"><ion-icon name="remove"></ion-icon></button>\n\n  </ion-fab>\n\n  <a [href]="src" target="_blank">PDF LINK</a>\n\n  <button ion-button (click)="openPDF()">PDF</button>\n\n  <pdf-viewer [src]="src"\n              [zoom]="zoom"\n              [show-all]="true"\n              [original-size]="false"\n              style="display: block;"\n  ></pdf-viewer>\n\n  <ng-template #other_content>PDF only supported on native devices</ng-template>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\David\WebstormProjects\dwApp\src\pages\pdf\pdf.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */],
-        __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__["a" /* FileTransfer */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__["a" /* File */],
-        __WEBPACK_IMPORTED_MODULE_4__ionic_native_document_viewer__["a" /* DocumentViewer */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */],
-        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
-], PdfPage);
-
-//# sourceMappingURL=pdf.js.map
-
-/***/ }),
-
-/***/ 232:
+/***/ 230:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(249);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -445,7 +377,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 251:
+/***/ 249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -453,22 +385,22 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_audio__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_data_service_data_service__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_lesson_list_lesson_list__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_pdf_viewer__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_audio__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_data_service_data_service__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_lesson_list_lesson_list__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_pdf_viewer__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_pdf_viewer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_ng2_pdf_viewer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_pdf_pdf__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_file_transfer__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_file__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_document_viewer__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_in_app_browser__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_pdf_pdf__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_file_transfer__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_file__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_document_viewer__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_in_app_browser__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -505,15 +437,15 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_10__pages_lesson_list_lesson_list__["a" /* LessonListPage */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_pdf_pdf__["a" /* PdfPage */]
+            __WEBPACK_IMPORTED_MODULE_12__pages_pdf_pdf__["a" /* PdfPage */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_8__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/intro/intro.module#IntroPageModule', name: 'IntroPage', segment: 'intro', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/intro/intro.module#IntroPageModule', name: 'IntroPage', segment: 'intro', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] }
                 ]
             }),
@@ -525,7 +457,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_10__pages_lesson_list_lesson_list__["a" /* LessonListPage */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_pdf_pdf__["a" /* PdfPage */]
+            __WEBPACK_IMPORTED_MODULE_12__pages_pdf_pdf__["a" /* PdfPage */],
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_17__ionic_native_in_app_browser__["a" /* InAppBrowser */],
@@ -544,16 +476,16 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 303:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(115);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -587,7 +519,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"C:\Users\David\WebstormProjects\dwApp\src\app\app.html"*/'<ion-menu [content]="mycontent" id="menu">\n\n  <ion-content>\n\n    <div class="logo" text-center>\n      <img src="assets/images/dw.png" alt="logo" style="width: 100%">\n      <p class="motto">Deutsch , Warum Nicht!</p>\n    </div>\n\n    <ion-list>\n      <button ion-item menuClose (click)="openPage(homePage)">\n        Home\n      </button>\n      <button ion-item menuClose (click)="openPage(settingsPage)">\n        Settings\n      </button>\n      <button ion-item menuClose (click)="openPage(aboutPage)">\n        About\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav #mycontent [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\David\WebstormProjects\dwApp\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/davidahmadov/Projects/dwApp/src/app/app.html"*/'<ion-menu [content]="mycontent" id="menu">\n\n  <ion-content>\n\n    <div class="logo" text-center>\n      <img src="assets/images/dw.png" alt="logo" style="width: 100%">\n      <p class="motto">Deutsch , Warum Nicht!</p>\n    </div>\n\n    <ion-list no-lines>\n      <button ion-item menuClose (click)="openPage(homePage)">\n        <ion-icon name="home" item-left></ion-icon> Home\n      </button>\n      <button ion-item menuClose (click)="openPage(settingsPage)">\n        <ion-icon name="settings" item-left></ion-icon> Settings\n      </button>\n      <button ion-item menuClose (click)="openPage(aboutPage)">\n        <ion-icon name="alert" item-left></ion-icon> About\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav #mycontent [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/davidahmadov/Projects/dwApp/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -596,12 +528,87 @@ MyApp = __decorate([
 
 /***/ }),
 
-/***/ 312:
+/***/ 310:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
+/***/ }),
+
+/***/ 326:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PdfPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_document_viewer__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__ = __webpack_require__(90);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var PdfPage = (function () {
+    function PdfPage(iab, document, navParams, viewCtrl, platform) {
+        this.iab = iab;
+        this.document = document;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.platform = platform;
+        this.zoom = 1;
+        this.isDevice = false;
+        this.isDevice = this.platform.is("cordova");
+    }
+    PdfPage.prototype.ionViewDidLoad = function () {
+        this.src = this.navParams.get('src');
+        this.title = this.navParams.get('title');
+    };
+    PdfPage.prototype.openPDF = function () {
+        var browser = this.iab.create('http://www.dw.com/downloads/25629156/eng1-01.pdf');
+        browser.show();
+        var options = {
+            title: 'My PDF'
+        };
+        //this.document.viewDocument('assets/myFile.pdf', 'application/pdf', options)
+    };
+    PdfPage.prototype.onDissmis = function () {
+        this.viewCtrl.dismiss();
+    };
+    PdfPage.prototype.zoomOut = function () {
+        if (this.zoom < 2) {
+            this.zoom += 0.2;
+        }
+    };
+    PdfPage.prototype.zoomIn = function () {
+        if (this.zoom > 0.5) {
+            this.zoom -= 0.2;
+        }
+    };
+    return PdfPage;
+}());
+PdfPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-pdf',template:/*ion-inline-start:"/Users/davidahmadov/Projects/dwApp/src/pages/pdf/pdf.html"*/'<ion-header>\n\n  <ion-navbar color="menu">\n    <ion-buttons start>\n      <button ion-button icon-only (click)="onDissmis()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Exercises</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <a href="https://docs.google.com/gview?embedded=true&url=http://www.dw.com/downloads/25629156/eng1-01.pdf">GOOGLE</a>\n\n  <button ion-button (click)="openPDF()">PDF</button>\n\n  <ng-template #other_content>PDF only supported on native devices</ng-template>\n\n</ion-content>\n'/*ion-inline-end:"/Users/davidahmadov/Projects/dwApp/src/pages/pdf/pdf.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_native_document_viewer__["a" /* DocumentViewer */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
+], PdfPage);
+
+//# sourceMappingURL=pdf.js.map
+
 /***/ })
 
-},[232]);
+},[230]);
 //# sourceMappingURL=main.js.map
