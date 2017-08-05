@@ -28660,11 +28660,11 @@ audio-track ion-thumbnail audio-track-play button ion-icon {
   font-size: 2em !important;
 }
 
-audio-track audio-track-progress em {
+audio-track-progress em {
   font-size: .8em;
 }
 
-audio-track audio-track-progress-bar {
+audio-track-progress-bar {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28675,26 +28675,26 @@ audio-track audio-track-progress-bar {
   align-items: center;
 }
 
-audio-track audio-track-progress-bar ion-range.range-ios {
+audio-track-progress-bar ion-range.range-ios {
   padding: 0;
 }
 
-audio-track audio-track-progress-bar ion-range.range-md {
+audio-track-progress-bar ion-range.range-md {
   padding: 0;
 }
 
-audio-track audio-track-progress-bar input[type=range] {
+audio-track-progress-bar input[type=range] {
   -webkit-appearance: none;
   width: 99%;
   margin-top: 12.5px;
   margin-bottom: 12.5px;
 }
 
-audio-track audio-track-progress-bar input[type=range]:focus {
+audio-track-progress-bar input[type=range]:focus {
   outline: none;
 }
 
-audio-track audio-track-progress-bar input[type=range]::-webkit-slider-runnable-track {
+audio-track-progress-bar input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 3px;
   cursor: pointer;
@@ -28705,11 +28705,11 @@ audio-track audio-track-progress-bar input[type=range]::-webkit-slider-runnable-
   border: 0;
 }
 
-audio-track audio-track-progress-bar input[type=range]:focus::-webkit-slider-runnable-track {
+audio-track-progress-bar input[type=range]:focus::-webkit-slider-runnable-track {
   background: #222;
 }
 
-audio-track audio-track-progress-bar input[type=range]::-webkit-slider-thumb {
+audio-track-progress-bar input[type=range]::-webkit-slider-thumb {
   -webkit-box-shadow: 2.2px 2.2px 8.9px #333333, 0px 0px 2.2px #404040;
   box-shadow: 2.2px 2.2px 8.9px #333333, 0px 0px 2.2px #404040;
   border: 0;
@@ -28722,17 +28722,14 @@ audio-track audio-track-progress-bar input[type=range]::-webkit-slider-thumb {
   margin-top: -12.5px;
 }
 
-audio-track audio-track-progress-bar input[type=range]::-webkit-slider-thumb:focus, audio-track audio-track-progress-bar input[type=range]::-webkit-slider-thumb:active {
+audio-track-progress-bar input[type=range]::-webkit-slider-thumb:focus, audio-track-progress-bar input[type=range]::-webkit-slider-thumb:active {
   background: #488aff;
 }
 
-audio-track audio-track-progress-bar input[type=range] + time, audio-track audio-track-progress-bar time + input[type=range] {
-  margin-left: 12.5px;
-}
-
-audio-track audio-track-progress-bar time {
+audio-track-progress-bar time {
   font-size: .8em;
-  min-width: 35px;
+  min-width: 40px;
+  text-align: center;
 }
 
 /*
@@ -33751,10 +33748,6 @@ audio-track audio-track-progress-bar time {
 .playButton {
   border: 1px solid menu;
   border-radius: 100%;
-}
-
-ion-icon {
-  color: #012D5A;
 }
 
 /*
@@ -38843,6 +38836,14 @@ page-home .main-bg {
   background-color: #466687;
 }
 
+page-lesson-list masterPlayButton {
+  color: #fff;
+}
+
+page-lesson-list audio-track-progress-bar {
+  color: #fff;
+}
+
 page-lesson-list ion-thumbnail {
   margin: 0 !important;
   padding: 0 !important;
@@ -38855,4 +38856,162 @@ page-lesson-list .big-icon {
 
 page-lesson-list ion-list {
   margin-top: 10px !important;
+}
+
+page-lesson-list ion-footer {
+  background-color: #012D5A;
+  padding-top: 20px;
+}
+
+@-webkit-keyframes playing {
+  from {
+    height: 45px;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+@keyframes playing {
+  from {
+    height: 45px;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+@-webkit-keyframes notplaying {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 45px;
+  }
+}
+
+@keyframes notplaying {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 45px;
+  }
+}
+
+page-lesson-list .playing {
+  height: 100px;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+page-lesson-list .notplaying {
+  -webkit-animation-name: notplaying;
+  animation-name: notplaying;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+}
+
+page-lesson-list input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 13.8px 0;
+}
+
+page-lesson-list input[type=range]:focus {
+  outline: none;
+}
+
+page-lesson-list input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #ffffff;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+page-lesson-list input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 1.7px 1.7px 7.1px #000000, 0px 0px 1.7px #0d0d0d;
+  box-shadow: 1.7px 1.7px 7.1px #000000, 0px 0px 1.7px #0d0d0d;
+  border: 0px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  background: #466687;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+page-lesson-list input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+
+page-lesson-list input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #ffffff;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+page-lesson-list input[type=range]::-moz-range-thumb {
+  box-shadow: 1.7px 1.7px 7.1px #000000, 0px 0px 1.7px #0d0d0d;
+  border: 0px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  background: #466687;
+  cursor: pointer;
+}
+
+page-lesson-list input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+page-lesson-list input[type=range]::-ms-fill-lower {
+  background: #d4d4d4;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+page-lesson-list input[type=range]::-ms-fill-upper {
+  background: #ffffff;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+page-lesson-list input[type=range]::-ms-thumb {
+  box-shadow: 1.7px 1.7px 7.1px #000000, 0px 0px 1.7px #0d0d0d;
+  border: 0px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  background: #466687;
+  cursor: pointer;
+  height: 8.4px;
+}
+
+page-lesson-list input[type=range]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+
+page-lesson-list input[type=range]:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+
+page-settings ion-list {
+  margin-top: 30px !important;
 }
